@@ -6,12 +6,12 @@
         <div>
             <h1>Bass Music Central</h1>
         </div>
-        <div>
-            <a href=""><p>YouTube Channel</p></a>
-            <a href=""><p>Twitter</p></a>
-        </div>
-        <div>
-            <a href=""><p><b>Free Music</b></p></a>
-        </div>
+        {% for post in posts %}
+            <div>
+                <p>Published: {{ post.published_date }}</p>
+                <a href=""><h1>{{ post.title }}</h1></a>
+                <p>{{ post.text|linebreaks }}</p>
+            </div>
+        {% endfor %}
     </body>
 </html>
