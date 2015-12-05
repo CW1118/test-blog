@@ -2,6 +2,10 @@ h1 a {
     color: rgb(247,164,25);
     font-family: 'Lobster';
 }
+.login {
+    float: right;
+    color: white;
+}
 body {
     padding-left: 15px;
     padding-right: 15px;
